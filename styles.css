@@ -1,0 +1,160 @@
+/* General */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: black;
+  background-color: white;
+  text-align: center;
+}
+
+/* Header */
+header {
+  background: #007bff;
+  padding: 10px;
+}
+
+header .logo img {
+  width: 150px;
+}
+
+/* Hero Section */
+.hero {
+  padding: 40px 20px;
+  background: #e6f0ff;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  color: #007bff;
+}
+
+.hero p {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #333;
+}
+
+
+/* Carrusel */
+.carousel {
+  position: relative;
+  width: 30%; /* Ajusta el tamaño del carrusel */
+  margin: 40px auto;
+  overflow: hidden; /* Oculta las imágenes fuera del carrusel */
+  border: 2px solid #007bff;
+  border-radius: 10px;
+}
+
+.carousel-container {
+  display: flex; /* Asegura que las imágenes se alineen horizontalmente */
+  transition: transform 0.4s ease-in-out; /* Transición suave al mover las imágenes */
+}
+
+.carousel-container img {
+  width: 100%; /* Hace que cada imagen ocupe el ancho total del contenedor */
+  flex-shrink: 0; /* Evita que las imágenes se encojan */
+}
+
+
+/* Download Section */
+.download {
+  padding: 40px 20px;
+  background: #cce5ff;
+}
+
+.download img {
+  width: 200px;
+  margin-top: 10px;
+}
+
+.download .button {
+  background: #007bff;
+  color: white;
+  padding: 15px 30px;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+/* Footer */
+footer {
+  background: #007bff;
+  color: white;
+  padding: 10px 0;
+}
+
+  /* Estilo para la sección de descripción */
+.description {
+  padding: 20px;
+  background-color: #f9f9f9; /* Fondo claro */
+  color: #333; /* Color de texto oscuro */
+  font-size: 1.2em; /* Tamaño de fuente un poco mayor */
+  line-height: 1.6; /* Espaciado entre líneas */
+  text-align: center; /* Texto centrado */
+  border-radius: 8px; /* Bordes redondeados */
+  max-width: 80%; /* Ancho máximo */
+  margin: 20px auto; /* Margen superior e inferior */
+}
+
+/* Estilo general */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Estilos de la sección de descarga */
+.download-section {
+  text-align: center;
+  margin: 40px 0;
+}
+
+/* Estilo para el QR Code (visible solo en pantallas grandes) */
+.qr-code {
+  display: none; /* Por defecto ocultamos el QR */
+}
+
+/* Estilo para el botón de descarga (visible solo en móviles) */
+.download-button {
+  display: none; /* Por defecto ocultamos el botón */
+}
+
+/* Estilo para pantallas de PC (escritorio) */
+@media screen and (min-width: 768px) {
+  .qr-code {
+    display: block; /* Mostrar el QR en pantallas grandes */
+  }
+  .download-button {
+    display: none; /* Asegurarnos de ocultar el botón en pantallas grandes */
+  }
+}
+
+/* Estilo para pantallas móviles */
+@media screen and (max-width: 767px) {
+  .qr-code {
+    display: none; /* Ocultar el QR en móviles */
+  }
+  .download-button {
+    display: block; /* Mostrar el botón en pantallas pequeñas */
+  }
+}
+
+/* Estilo para el botón de descarga */
+.button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
